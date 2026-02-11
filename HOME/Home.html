@@ -1,0 +1,134 @@
+<!--- COLLEGAMENTO PAGINA CSS ---->
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../HOME/Home.css">
+</head>
+<!--- CORPO DEL SITO ---->
+
+<body id="body">
+    <!------------ NAV BAR(MENU DI NAVIGAZIONE) ------------->
+    <nav class="nav">
+        <!------------ LOGO ------------->
+        <div class="Logo">
+            <img src="../IMMAGINI/studioLegale.png" alt="Logo">
+        </div>
+
+        <!------------ PAGINE ------------->
+        <div class="pagine_navigazione">
+            <a href="Home.html">Home</a>
+            <a href="../CHI SONO/ChiSono.html">Chi Sono</a>
+            <a href="../SERVIZI/Servizi.html">Servizi</a>
+            <a href="../AREE/Aree.html">Aree</a>
+            <a href="../COSTI/Costi.html">Costi</a>
+            <a href="../CONTATTI/contatti.html">Contatti</a>
+        </div>
+    </nav>
+
+    <!------------ IMMAGINE TESTI E BOTTONI ------------->
+    <div class="divContenitoreGrande">
+        <div class="ContenutoDiv">
+            <div>
+                <h1>Consulenza legale Chiara e Affidabile</h1>
+                <p>Supporto legale professionale in ambito civile, commerciale e lavorativo.</p>
+            </div>
+            <div>
+                <a href="#" class="bottoneConsulenza">Prenota una consulenza</a>
+            </div>
+        </div>
+    </div>
+
+    <!------------ CARD VETRINA CONSULTI ------------->
+    <h2 id="titolodesc">La mia professione</h2>
+    <p id="paragrafoDescrizione">Sono un avvocato con oltre 20 anni di esperienza nel diritto civile.
+        Nel corso della mia carriera ho assistito privati e aziende nella gestione di questioni legali complesse,
+        offrendo consulenze chiare, trasparenti e orientate alla soluzione.
+
+        Mi occupo con professionalità di tutela dei diritti, assistenza contrattuale e risoluzione di controversie,
+        garantendo un approccio serio, attento e personalizzato per ogni cliente.</p>
+    <div class="contenitoreCard">
+
+        <div class="card">
+            <img class="icone" src="../IMMAGINI/PENNA.png">
+            <h2 id="titoloCard">Assistenza Contrattuale</h2>
+            <p id="testoPiccolo">Redazione e revisione di contratti</p>
+            <div>
+                <a href="#" class="bottoneConsulenza">Scopri di più</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="icone" src="../IMMAGINI/FAMIGLIA.png">
+            <h2 id="titoloCard">Consulenza Civile</h2>
+            <p id="testoPiccolo">Tutela in questioni familiari e immobiliari</p>
+            <div>
+                <a href="#" class="bottoneConsulenza">Scopri di più</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="icone" src="../IMMAGINI/LAVORO.png">
+            <h2 id="titoloCard">Diritto del Lavoro</h2>
+            <p id="testoPiccolo">Soluzioni per lavoratori e aziende</p>
+            <div>
+                <a href="#" class="bottoneConsulenza">Scopri di più</a>
+            </div>
+        </div>
+
+    </div>
+    <hr class="hr">
+    <!------------ FORM INVIO DATI CONSULENZA ------------->
+    <h2 id="h2">Prenota una Consulenza</h2>
+    <div id="pConsulenza">
+        <p>Hai bisogno di assistenza legale personalizzata? </p>
+        <p>Compila il modulo qui sotto e il nostro team ti risponderà
+            rapidamente per offrirti supporto professionale e su misura per le tue esigenze.</p>
+    </div>
+
+    <form class="form">
+        <div>
+            <div id="containerDivForm">
+                <input type="text" placeholder="Nome">
+            </div>
+            <div id="containerDivForm">
+                <input type="text" placeholder="Cognome">
+            </div>
+            <div id="containerDivForm">
+                <input type="text" placeholder="Telefono">
+            </div>
+            <div id="containerDivForm">
+                <input type="datetime-local" placeholder="Data">
+            </div>
+            <div id="containerDivForm">
+                <input type="text" placeholder="Orario">
+            </div>
+            <div id="containerDivForm">
+                <textarea placeholder="Messaggio"></textarea>
+            </div>
+            <div>
+                <button class="bottoneInviaRichiesta" type="button">Invia Richiesta</button>
+            </div>
+        </div>
+    </form>
+
+
+
+    <!------------ FOOTER (FINE PAGINA) ------------->
+    <footer>
+        <div>
+            <div>
+                <img id="Logo" src="../IMMAGINI/StudioBianco.png" alt="">
+            </div>
+            <div>
+                <p>Email: info@studiodraganoiu.it</p>
+            </div>
+            <p>Telefono: 123 456 7890</p>
+        </div>
+    </footer>
+
+</body>

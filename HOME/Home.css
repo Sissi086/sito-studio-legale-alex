@@ -1,0 +1,244 @@
+#body {
+    margin: 0px;
+}
+#paragrafoDescrizione{
+    text-align: center;
+    margin: 70px;
+    margin-top: 10px;
+}
+#titolodesc{
+    text-align: center;
+}
+
+.hr{
+margin-left:60px ;
+margin-right:60px ;
+margin-top: 40px;
+}
+
+/*------- CSS NAV BARE E LOGO -----*/
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #ffffff;
+}
+
+.Logo img {
+    height: 40px;
+}
+
+.pagine_navigazione a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.pagine_navigazione a:hover {
+    color: #b3cfec;
+}
+
+/*------- CSS IMMAGINE e TITOLO IN PRIMO PIANO  -----*/
+
+.divContenitoreGrande {
+    width: 100%;
+    height: 50%;
+    background-image: url("../IMMAGINI/foto.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1c2a39;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+   
+}
+
+.bottoni {
+    display: flex;
+    gap: 15px;
+}
+
+.contenutoDiv {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.contenutoDiv h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contenutoDiv p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.bottoneConsulenza {
+    background-color: #6da5ee;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+/*------- CSS CARDS -----*/
+.contenitoreCard {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;;
+    gap: 20px;
+    margin-top: 20px;
+    margin-inline: 10px;
+}
+
+.card {
+
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px 10px;
+    text-align: left;
+    position: relative;
+    border: 1px solid #d7d9da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone {
+    width: 50px;
+    height: auto;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#titoloCard {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#testoPiccolo {
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+/*------- CSS PRENOTA CONSULENZA -----*/
+
+
+#pConsulenza{
+margin-left: 20px;
+}
+
+#h2{
+    color: #233d4e;
+    margin-left: 20px;
+}
+
+#p{
+    margin-left: 20px;
+    margin-top: 0%;
+}
+
+.form{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px; 
+    align-items: center;
+}
+#containerDivForm{
+    margin-bottom: 20px
+}
+
+.form input {
+    box-sizing: border-box;
+    width: 40%; 
+    padding: 12px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.bottoneInviaRichiesta{
+    background-color: #6da5ee;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 16px;
+    border:#6da5ee; 
+    box-sizing: border-box;
+    width: 40%; 
+}
+
+.contenitorePrenotazione {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px; 
+    margin-top: 50px;
+}
+
+.bloccoTesto {
+    width: 40%;
+}
+
+.containerDivForm {
+    margin-bottom: 20px;
+}
+
+
+/*------- CSS FOOTER -----*/
+
+
+footer {
+    background-color: #1c2a39; /* colore scuro elegante */
+    color: #ffffff; /* testo chiaro per contrasto */
+    padding: 30px 20px; /* spazio interno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between; /* divide lo spazio tra le due sezioni */
+    flex-wrap: wrap; /* si adatta ai dispositivi più piccoli */
+    max-width: 1200px;
+    margin: 0 auto; /* centra il contenuto */
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+#Logo{
+    height: 40px;
+}
