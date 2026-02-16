@@ -1,0 +1,174 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#body {
+    margin: 0px;
+}
+
+/*------- CSS NAV BARE E LOGO -----*/
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #ffffff;
+}
+
+.Logo img {
+    height: 40px;
+}
+
+.pagine_navigazione a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.pagine_navigazione a:hover {
+    color: #b3cfec;
+}
+
+/*------- IMMAGINE CHI SONO -----*/
+
+.divContenitoreGrande {
+    width: 100%;
+    height: 50%;
+    background-image: url("../IMMAGINI/CHISONO1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/*----------- PARTE CENTRALE ----------*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* SFONDO */
+.fascia-sfondo {
+    background: linear-gradient(135deg, #0a1d37 0%, #1c3d5a 100%);
+    width: 100%;
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+/* CENTRARE TESTO E IMMAGINE  */
+.contenitore-interno {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.testo {
+    flex: 2;
+    padding-right: 40px;
+}
+
+.immagine-profilo {
+    flex: 1;
+    text-align: center;
+}
+#titolo{
+    color: #ffffff;
+}
+.immagine-profilo img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 8px solid white;
+    /*  ombreggiatura*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+#ptitolo{
+color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* SEZIONE CERCHI E FASCE  */
+.sezione-valori {
+    max-width: 1000px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.cerchio-valore {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #1c2a39;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+    color: #1c2a39;
+}
+
+
+
+
+
+/*------- CSS FOOTER -----*/
+
+
+footer {
+    background-color: #1c2a39;
+    color: #ffffff;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+#Logo {
+    height: 40px;
+}

@@ -22,7 +22,7 @@
         <!------------ PAGINE ------------->
         <div class="pagine_navigazione">
             <a href="Home.html">Home</a>
-            <a href="../CHI SONO/ChiSono.html">Chi Sono</a>
+            <a href="../CHISONO/ChiSono.html">Chi Sono</a>
             <a href="../SERVIZI/Servizi.html">Servizi</a>
             <a href="../AREE/Aree.html">Aree</a>
             <a href="../COSTI/Costi.html">Costi</a>
@@ -84,37 +84,49 @@
     <hr class="hr">
     <!------------ FORM INVIO DATI CONSULENZA ------------->
     <h2 id="h2">Prenota una Consulenza</h2>
-    <div id="pConsulenza">
-        <p>Hai bisogno di assistenza legale personalizzata? </p>
-        <p>Compila il modulo qui sotto e il nostro team ti risponderà
-            rapidamente per offrirti supporto professionale e su misura per le tue esigenze.</p>
-    </div>
 
-    <form class="form">
-        <div>
-            <div id="containerDivForm">
-                <input type="text" placeholder="Nome">
+    <div class="contenitorePrenotazione">
+
+        <!-- BLOCCO TESTO + FORM -->
+        <div class="bloccoForm">
+
+            <div id="pConsulenza">
+                <p>Hai bisogno di assistenza legale personalizzata?</p>
+                <p>Compila il modulo qui sotto e il nostro team ti risponderà
+                    rapidamente per offrirti supporto professionale e su misura per le tue esigenze.</p>
             </div>
-            <div id="containerDivForm">
-                <input type="text" placeholder="Cognome">
-            </div>
-            <div id="containerDivForm">
-                <input type="text" placeholder="Telefono">
-            </div>
-            <div id="containerDivForm">
-                <input type="datetime-local" placeholder="Data">
-            </div>
-            <div id="containerDivForm">
-                <input type="text" placeholder="Orario">
-            </div>
-            <div id="containerDivForm">
-                <textarea placeholder="Messaggio"></textarea>
-            </div>
-            <div>
-                <button class="bottoneInviaRichiesta" type="button">Invia Richiesta</button>
-            </div>
+
+            <form class="form">
+                <div id="containerDivForm">
+                    <input type="text" placeholder="Nome">
+                </div>
+                <div id="containerDivForm">
+                    <input type="text" placeholder="Cognome">
+                </div>
+                <div id="containerDivForm">
+                    <input type="text" placeholder="Telefono">
+                </div>
+                <div id="containerDivForm">
+                    <input type="datetime-local">
+                </div>
+                <div id="containerDivForm">
+                    <input type="text" placeholder="Orario">
+                </div>
+                <div id="containerDivForm">
+                    <textarea placeholder="Messaggio"></textarea>
+                </div>
+                <button class="bottoneInviaRichiesta" type="button">
+                    Invia Richiesta
+                </button>
+            </form>
         </div>
-    </form>
+
+        <!-- IMMAGINE LATERALE -->
+        <div class="Immagine">
+            <img src="../IMMAGINI/mano.png" alt="Consulenza legale">
+        </div>
+
+    </div>
 
 
 
