@@ -1,5 +1,7 @@
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
 }
 
 #body {
@@ -56,7 +58,7 @@ a {
 .divContenitoreGrande {
     width: 100%;
     height: 50%;
-    background-image: url("../IMMAGINI/foto.png");
+    background-image: url("../IMMAGINI/blu1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,23 +252,18 @@ textarea {
 
 footer {
     background-color: #1c2a39;
-    /* colore scuro elegante */
     color: #ffffff;
-    /* testo chiaro per contrasto */
     padding: 30px 20px;
-    /* spazio interno */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer div {
     display: flex;
     justify-content: space-between;
-    /* divide lo spazio tra le due sezioni */
     flex-wrap: wrap;
-    /* si adatta ai dispositivi più piccoli */
     max-width: 1200px;
     margin: 0 auto;
-    /* centra il contenuto */
+
 }
 
 footer h3 {

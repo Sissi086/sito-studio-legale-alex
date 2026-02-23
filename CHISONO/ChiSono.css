@@ -1,10 +1,9 @@
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
 }
 
-#body {
-    margin: 0px;
-}
 
 /*------- CSS NAV BARE E LOGO -----*/
 a {
@@ -60,7 +59,6 @@ body {
     background: linear-gradient(135deg, #0a1d37 0%, #1c3d5a 100%);
     width: 100%;
     padding: 60px 0;
-    margin-top: 40px;
 }
 
 /* CENTRARE TESTO E IMMAGINE  */
@@ -81,9 +79,11 @@ body {
     flex: 1;
     text-align: center;
 }
-#titolo{
+
+#titolo {
     color: #ffffff;
 }
+
 .immagine-profilo img {
     width: 280px;
     height: 280px;
@@ -94,8 +94,8 @@ body {
     object-fit: cover;
 }
 
-#ptitolo{
-color: #ffffff;
+#ptitolo {
+    color: #ffffff;
 }
 
 h1 {

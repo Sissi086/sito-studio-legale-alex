@@ -1,5 +1,7 @@
-#body{
-     margin: 0px;
+#body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-color: #f4f7f9;
 }
 
 /*------- CSS NAV BARE E LOGO -----*/
@@ -33,15 +35,10 @@ a {
 
 /*------- PAGINA CENTRALE  -----*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 body {
-    background-color: #f9f9f9;
+    background-color: #f4f7f9;
     color: #ffffff;
 }
 
