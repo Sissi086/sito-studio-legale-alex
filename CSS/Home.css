@@ -148,82 +148,7 @@ a {
     margin: 0 0 15px 0;
 }
 
-/*------- CSS PRENOTA CONSULENZA -----*/
 
-
-#pConsulenza {
-    margin-left: 20px;
-}
-
-#h2 {
-    color: #233d4e;
-    margin-left: 20px;
-}
-
-#p {
-    margin-left: 20px;
-    margin-top: 0%;
-}
-
-.form {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
-    align-items: center;
-}
-
-#containerDivForm {
-    margin-bottom: 20px
-}
-
-.form input {
-    box-sizing: border-box;
-    width: 40%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 13px;
-}
-
-.bottoneInviaRichiesta {
-    background-color: #6da5ee;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    border-radius: 2px;
-    font-size: 16px;
-    border: #6da5ee;
-    box-sizing: border-box;
-    width: 40%;
-}
-
-.contenitorePrenotazione {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 60px;
-    margin-top: 50px;
-}
-
-.bloccoTesto {
-    width: 40%;
-}
-
-.containerDivForm {
-    margin-bottom: 20px;
-}
-
-.contenitorePrenotazione {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 60px;
-    margin: 50px 20px;
-}
-
-.bloccoForm {
-    width: 45%;
-}
 
 .Immagine {
     width: 45%;
@@ -251,6 +176,7 @@ textarea {
 
 
 footer {
+    margin-top: 150px;
     background-color: #1c2a39;
     color: #ffffff;
     padding: 30px 20px;
@@ -263,7 +189,6 @@ footer div {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 footer h3 {
