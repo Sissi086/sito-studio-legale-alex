@@ -293,3 +293,23 @@ footer {
         height: 215px;
     }
 }
+
+/* ANIMAZIONI JS */
+.fade-element {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-scroll {
+    box-shadow: 0 8px 28px rgba(28, 42, 57, 0.12);
+}
+
+.card-attiva {
+    transform: translateY(-8px);
+}
