@@ -1,27 +1,32 @@
-<!--- COLLEGAMENTO PAGINA CSS ---->
+<!DOCTYPE html>
+<html lang="it">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Legale Draganoiu</title>
+
+    <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/Home.css">
 </head>
-<!--- CORPO DEL SITO ---->
 
-<body id="body">
-    <!------------ NAV BAR(MENU DI NAVIGAZIONE) ------------->
+<body>
+
+    <!-- NAVBAR -->
     <nav class="nav">
-        <!------------ LOGO ------------->
-        <div class="Logo">
-            <img src="IMMAGINI/studioLegale.png" alt="Logo">
+        <div class="logo">
+            <img src="IMMAGINI/studioLegale.png" alt="Logo Studio Legale Draganoiu">
         </div>
 
-        <!------------ PAGINE ------------->
         <div class="pagine_navigazione">
-           <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="PAGINE/ChiSono.html">Chi Sono</a>
             <a href="PAGINE/Servizi.html">Servizi</a>
             <a href="PAGINE/Aree.html">Aree</a>
@@ -32,69 +37,111 @@
         </div>
     </nav>
 
-    <!------------ IMMAGINE TESTI E BOTTONI ------------->
-    <div class="divContenitoreGrande">
-        <div class="ContenutoDiv">
-            <div>
-                <h1>Consulenza legale Chiara e Affidabile</h1>
-                <p>Supporto legale professionale in ambito civile, commerciale e lavorativo.</p>
-            </div>
-            <div>
-                <a href="Consulenza.html" class="bottoneConsulenza">Prenota una consulenza</a>
-            </div>
+    <!-- HERO -->
+    <header class="divContenitoreGrande">
+        <div class="contenutoHero">
+            <span class="sottotitoloHero">Studio Legale</span>
+
+            <h1>Consulenza legale chiara, seria e affidabile</h1>
+
+            <p>
+                Assistenza professionale in ambito civile, contrattuale e lavorativo,
+                con un approccio attento, trasparente e orientato alla tutela concreta del cliente.
+            </p>
+
+            <a href="PAGINE/Consulenza.html" class="bottoneConsulenza">
+                Prenota una consulenza
+            </a>
         </div>
-    </div>
+    </header>
 
-    <!------------ CARD VETRINA CONSULTI ------------->
-    <h2 id="titolodesc">La mia professione</h2>
-    <p id="paragrafoDescrizione">Sono un avvocato con oltre 20 anni di esperienza nel diritto civile.
-        Nel corso della mia carriera ho assistito privati e aziende nella gestione di questioni legali complesse,
-        offrendo consulenze chiare, trasparenti e orientate alla soluzione.
+    <!-- PROFESSIONE -->
+    <main>
 
-        Mi occupo con professionalità di tutela dei diritti, assistenza contrattuale e risoluzione di controversie,
-        garantendo un approccio serio, attento e personalizzato per ogni cliente.</p>
-    <div class="contenitoreCard">
-
-        <div class="card">
-            <img class="icone" src="IMMAGINI/PENNA.png">
-            <h2 id="titoloCard">Assistenza Contrattuale</h2>
-            <p id="testoPiccolo">Redazione e revisione di contratti</p>
-            <div>
-                <a href="#" class="bottoneConsulenza">Scopri di più</a>
+        <section class="sezioneProfessione">
+            <div class="intestazioneSezione">
+                <span class="etichettaSezione">Esperienza e metodo</span>
+                <h2>La mia professione</h2>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="icone" src="IMMAGINI/FAMIGLIA.png">
-            <h2 id="titoloCard">Consulenza Civile</h2>
-            <p id="testoPiccolo">Tutela in questioni familiari e immobiliari</p>
-            <div>
-                <a href="#" class="bottoneConsulenza">Scopri di più</a>
-            </div>
-        </div>
+            <p class="paragrafoDescrizione">
+                Lo studio offre supporto legale a privati, professionisti e aziende che necessitano
+                di un’assistenza precisa, comprensibile e costruita sulle reali esigenze del caso.
+                Ogni situazione viene analizzata con attenzione, valutando gli aspetti giuridici,
+                pratici e personali che possono incidere sulla scelta della strategia più adatta.
+            </p>
 
-        <div class="card">
-            <img class="icone" src="IMMAGINI/LAVORO.png">
-            <h2 id="titoloCard">Diritto del Lavoro</h2>
-            <p id="testoPiccolo">Soluzioni per lavoratori e aziende</p>
-            <div>
-                <a href="#" class="bottoneConsulenza">Scopri di più</a>
-            </div>
-        </div>
+            <p class="paragrafoDescrizione">
+                L’obiettivo è accompagnare il cliente con chiarezza in ogni fase, dalla prima consulenza
+                alla gestione della pratica, offrendo risposte concrete, tempi chiari e un rapporto fondato
+                su fiducia, riservatezza e professionalità.
+            </p>
+        </section>
 
-    </div>
+        <!-- CARD SERVIZI -->
+        <section class="contenitoreCard">
 
-    <!------------ FOOTER (FINE PAGINA) ------------->
+            <article class="card">
+                <img class="icone" src="IMMAGINI/PENNA.png" alt="Icona assistenza contrattuale">
+
+                <h2>Assistenza contrattuale</h2>
+
+                <p>
+                    Redazione, revisione e analisi di contratti, accordi e documenti legali,
+                    con particolare attenzione alla tutela degli interessi del cliente.
+                </p>
+            </article>
+
+            <article class="card">
+                <img class="icone" src="IMMAGINI/FAMIGLIA.png" alt="Icona consulenza civile">
+
+                <h2>Consulenza civile</h2>
+
+                <p>
+                    Supporto in controversie civili, questioni familiari, patrimoniali e immobiliari,
+                    con un’assistenza personalizzata e orientata alla soluzione.
+                </p>
+            </article>
+
+            <article class="card">
+                <img class="icone" src="IMMAGINI/LAVORO.png" alt="Icona diritto del lavoro">
+
+                <h2>Diritto del lavoro</h2>
+
+                <p>
+                    Assistenza a lavoratori e aziende nella gestione di rapporti di lavoro,
+                    contestazioni, accordi, licenziamenti e problematiche professionali.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- BLOCCO FIDUCIA -->
+        <section class="sezioneFiducia">
+            <h2>Un supporto legale vicino alle tue esigenze</h2>
+
+            <p>
+                Ogni consulenza viene svolta con attenzione, ascolto e riservatezza.
+                Lo studio si impegna a fornire spiegazioni semplici, valutazioni realistiche
+                e un percorso chiaro, evitando tecnicismi inutili e privilegiando un dialogo diretto
+                con il cliente.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer>
-        <div>
-            <div>
-                <img id="Logo" src="IMMAGINI/StudioBianco.png" alt="">
-            </div>
-            <div>
+        <div class="footerContenuto">
+            <img id="Logo" src="IMMAGINI/StudioBianco.png" alt="Logo Studio Legale Draganoiu">
+
+            <div class="footerInfo">
                 <p>Email: info@studiodraganoiu.it</p>
+                <p>Telefono: 123 456 7890</p>
             </div>
-            <p>Telefono: 123 456 7890</p>
         </div>
     </footer>
 
 </body>
+
+</html>

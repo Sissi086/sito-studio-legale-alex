@@ -1,25 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi | Studio Legale Draganoiu</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="../CSS/servizi.css">
 </head>
-<!--- CORPO DEL SITO ---->
 
-<body id="body">
-    <!------------ NAV BAR(MENU DI NAVIGAZIONE) ------------->
+<body>
+
+    <!-- NAVBAR -->
     <nav class="nav">
-        <!------------ LOGO ------------->
-        <div class="Logo">
-            <img src="../IMMAGINI/studioLegale.png" alt="Logo">
+        <div class="logo">
+            <img src="../IMMAGINI/studioLegale.png" alt="Logo Studio Legale Draganoiu">
         </div>
 
-        <!------------ PAGINE ------------->
         <div class="pagine_navigazione">
-         <a href="../index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="ChiSono.html">Chi Sono</a>
             <a href="Servizi.html">Servizi</a>
             <a href="Aree.html">Aree</a>
@@ -29,97 +34,163 @@
             <a href="contatti.html">Contatti</a>
         </div>
     </nav>
-    <!-- --------------------------------------------->
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="sottotitoloHero">Servizi legali</span>
+
+            <h1>I nostri servizi</h1>
+
+            <p>
+                Soluzioni legali chiare, personalizzate e costruite sulle reali esigenze
+                di privati, professionisti e aziende.
+            </p>
+        </div>
+    </header>
+
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>I NOSTRI SERVIZI</h1>
-                <p>Soluzioni chiare per ogni tua esigenza.</p>
-                <div class="hero-buttons">
 
-                    <a href="#" class="btn btn-solid">Prenota Subito</a>
-                </div>
-            </div>
+        <!-- INTRO -->
+        <section class="services-intro">
+            <span class="etichettaSezione">Come possiamo aiutarti</span>
+
+            <h2>Assistenza concreta in ogni fase</h2>
+
+            <p>
+                Lo studio offre supporto nella gestione di questioni legali che richiedono attenzione,
+                precisione e una valutazione accurata. Ogni pratica viene affrontata con un metodo chiaro:
+                ascolto iniziale, analisi della documentazione, individuazione della strategia e assistenza
+                durante tutto il percorso.
+            </p>
         </section>
 
+        <!-- SERVIZI -->
         <section class="services-container">
-            <h2 class="section-title">COME LAVORIAMO</h2>
-
             <div class="services-grid">
-                <div class="service-card icon-card">
-                    <i class="fa-solid fa-file-contract"></i>
+
+                <article class="service-card">
                     <h3>Contratti</h3>
-                </div>
-                <div class="service-card icon-card">
-                    <i class="fa-solid fa-users"></i>
+                    <p>
+                        Redazione, controllo e revisione di contratti, accordi e scritture private,
+                        con particolare attenzione alla tutela del cliente e alla chiarezza delle clausole.
+                    </p>
+                </article>
+
+                <article class="service-card">
                     <h3>Famiglia</h3>
-                </div>
-                <div class="service-card icon-card">
-                    <i class="fa-solid fa-gavel"></i>
+                    <p>
+                        Consulenza in ambito familiare e personale, con un approccio riservato,
+                        attento e orientato alla gestione equilibrata delle situazioni più delicate.
+                    </p>
+                </article>
+
+                <article class="service-card">
                     <h3>Lavoro</h3>
-                </div>
-                <div class="service-card icon-card">
-                    <i class="fa-solid fa-handshake"></i>
+                    <p>
+                        Assistenza a lavoratori e aziende in materia di rapporti di lavoro,
+                        contestazioni, accordi, licenziamenti e tutela dei diritti professionali.
+                    </p>
+                </article>
+
+                <article class="service-card">
                     <h3>Accordi</h3>
-                </div>
+                    <p>
+                        Supporto nella definizione di accordi tra le parti, con l’obiettivo di prevenire
+                        controversie o trovare soluzioni rapide, sostenibili e formalmente corrette.
+                    </p>
+                </article>
 
-                <div class="service-card detail-card">
+                <article class="service-card">
                     <h3>Negoziazioni</h3>
-                    <ul>
-                        <li>In parole semplici: perché è importante per te.</li>
-                    </ul>
-                </div>
-                <div class="service-card detail-card">
-                    <h3>Debiti</h3>
-                    <ul>
-                        <li>Perché è importante monitorarli.</li>
-                    </ul>
-                </div>
-                <div class="service-card detail-card">
-                    <h3>Lavoro</h3>
-                    <ul>
-                        <li>Tutela e consulenza legale dedicata.</li>
-                    </ul>
-                </div>
-                <div class="service-card detail-card">
-                    <h3>Societario</h3>
-                    <ul>
-                        <li>Gestione e supporto per la tua impresa.</li>
-                    </ul>
-                </div>
+                    <p>
+                        Gestione di trattative e comunicazioni legali, cercando soluzioni efficaci
+                        prima di arrivare, quando possibile, a un contenzioso giudiziale.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Debiti e recupero crediti</h3>
+                    <p>
+                        Valutazione della situazione debitoria, assistenza nei rapporti con creditori
+                        e debitori, solleciti, accordi e tutela nelle procedure di recupero.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Diritto civile</h3>
+                    <p>
+                        Assistenza in controversie civili, responsabilità, risarcimenti, questioni patrimoniali,
+                        immobiliari e rapporti tra privati.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Impresa e società</h3>
+                    <p>
+                        Supporto legale ad aziende e professionisti nella gestione di rapporti commerciali,
+                        contratti, problematiche societarie e tutela dell’attività.
+                    </p>
+                </article>
+
             </div>
         </section>
 
+        <!-- METODO -->
         <section class="methodology">
-            <h2 class="section-title">IL NOSTRO METODO</h2>
+            <span class="etichettaSezione">Metodo di lavoro</span>
+
+            <h2>Un percorso semplice e ordinato</h2>
+
             <div class="method-grid">
-                <div class="method-item">
-                    <div class="method-icon"><img src="../IMMAGINI/analisiGratuita.png"></div>
-                    <p>Analisi Gratuita</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><img src="../IMMAGINI/strategiaChiara.png"></div>
-                    <p>Strategia Chiara</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><img src="../IMMAGINI/difdir.png"></div>
-                    <p>Difesa Diretta</p>
-                </div>
+
+                <article class="method-item">
+                    <div class="method-icon">
+                        <img src="../IMMAGINI/analisiGratuita.png" alt="Icona analisi iniziale">
+                    </div>
+                    <h3>Analisi iniziale</h3>
+                    <p>
+                        Valutazione del caso, ascolto delle esigenze e raccolta dei primi elementi utili.
+                    </p>
+                </article>
+
+                <article class="method-item">
+                    <div class="method-icon">
+                        <img src="../IMMAGINI/strategiaChiara.png" alt="Icona strategia chiara">
+                    </div>
+                    <h3>Strategia chiara</h3>
+                    <p>
+                        Spiegazione delle possibilità concrete, dei rischi, dei tempi e dei passaggi necessari.
+                    </p>
+                </article>
+
+                <article class="method-item">
+                    <div class="method-icon">
+                        <img src="../IMMAGINI/difdir.png" alt="Icona difesa diretta">
+                    </div>
+                    <h3>Assistenza diretta</h3>
+                    <p>
+                        Supporto costante nella gestione della pratica, con comunicazioni chiare e aggiornamenti.
+                    </p>
+                </article>
+
             </div>
         </section>
+
     </main>
 
-    <!------------ FOOTER (FINE PAGINA) ------------->
+    <!-- FOOTER -->
     <footer>
-        <div>
-            <div>
-                <img id="Logo" src="../IMMAGINI/StudioBianco.png" alt="">
-            </div>
-            <div>
+        <div class="footerContenuto">
+            <img id="Logo" src="../IMMAGINI/StudioBianco.png" alt="Logo Studio Legale Draganoiu">
+
+            <div class="footerInfo">
                 <p>Email: info@studiodraganoiu.it</p>
+                <p>Telefono: 123 456 7890</p>
             </div>
-            <p>Telefono: 123 456 7890</p>
         </div>
     </footer>
 
 </body>
+
+</html>

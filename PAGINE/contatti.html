@@ -1,25 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Studio Legale Draganoiu</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="../CSS/Contatti.css">
 </head>
-<!--- CORPO DEL SITO ---->
 
-<body id="body">
-    <!------------ NAV BAR(MENU DI NAVIGAZIONE) ------------->
+<body>
+
+    <!-- NAVBAR -->
     <nav class="nav">
-        <!------------ LOGO ------------->
-        <div class="Logo">
-            <img src="../IMMAGINI/studioLegale.png" alt="Logo">
+        <div class="logo">
+            <img src="../IMMAGINI/studioLegale.png" alt="Logo Studio Legale Draganoiu">
         </div>
 
-        <!------------ PAGINE ------------->
         <div class="pagine_navigazione">
-          <a href="../index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="ChiSono.html">Chi Sono</a>
             <a href="Servizi.html">Servizi</a>
             <a href="Aree.html">Aree</a>
@@ -30,66 +35,102 @@
         </div>
     </nav>
 
+    <!-- HERO -->
+    <header class="contact-hero">
+        <div class="hero-text">
+            <span class="sottotitoloHero">Contatti</span>
+
+            <h1>Parliamone con chiarezza</h1>
+
+            <p>
+                Ogni tutela inizia da un primo confronto. Puoi contattare lo studio per richiedere
+                informazioni, fissare un appuntamento o ricevere indicazioni sulla consulenza più adatta
+                alla tua situazione.
+            </p>
+        </div>
+    </header>
 
     <main class="contact-page">
-        <section class="contact-hero">
-            <div class="container hero-grid">
-                <div class="hero-text">
-                    <h1>Parliamone Senza Impegno</h1>
-                    <p>Siamo qui per ascoltarti e rispondere alle tue domande. Ogni grande tutela inizia con un semplice
-                        confronto.</p>
-                </div>j87
+
+        <!-- INTRO -->
+        <section class="intro-contatti">
+            <span class="etichettaSezione">Come raggiungerci</span>
+
+            <h2>Siamo a disposizione per ascoltare la tua esigenza</h2>
+
+            <p>
+                Per una gestione più ordinata della richiesta, è consigliabile indicare brevemente
+                il motivo del contatto e lasciare un recapito valido. Lo studio provvederà a rispondere
+                nel minor tempo possibile, compatibilmente con gli impegni professionali.
+            </p>
         </section>
 
-        <section class="container info-map-section">
+        <!-- INFO + MAPPA -->
+        <section class="info-map-section">
+
             <div class="info-content">
-                <div class="info-item">
+
+                <article class="info-item">
                     <span class="icon">✉</span>
                     <div>
-                        <strong>Email:</strong><br>
+                        <h3>Email</h3>
                         <a href="mailto:info@studiodraganoiu.it">info@studiodraganoiu.it</a>
                     </div>
-                </div>
-                <div class="info-item">
-                    <span class="icon">📞</span>
+                </article>
+
+                <article class="info-item">
+                    <span class="icon">☎</span>
                     <div>
-                        <strong>Telefono:</strong><br>
+                        <h3>Telefono</h3>
                         <a href="tel:+391234567890">123 456 7890</a>
                     </div>
-                </div>
-                <div class="info-item">
-                    <span class="icon">📍</span>
+                </article>
+
+                <article class="info-item">
+                    <span class="icon">⌖</span>
                     <div>
-                        <strong>Indirizzo:</strong><br>
-                        Via Roma, 12, Trento (38122)
+                        <h3>Indirizzo</h3>
+                        <p>Via Roma, 12, Trento 38122</p>
                     </div>
-                </div>
+                </article>
 
                 <div class="motivational-quote">
                     <span class="quote-mark">“</span>
-                    <p>Il primo passo è semplice: chiamaci o scrivici per una prima valutazione. La tutela dei tuoi
-                        diritti è la nostra priorità.</p>
+                    <p>
+                        Il primo passo è semplice: scrivere o chiamare per una prima valutazione.
+                        Comprendere il problema è il modo migliore per scegliere come affrontarlo.
+                    </p>
                 </div>
+
             </div>
 
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.000000000000!2d9.18!3d45.46!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI3JzM2LjAiTiA5wrAxMCc0OC4wIkU!5e0!3m2!1sit!2sit!4v1600000000000!5m2!1sit!2sit"
-                    width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy">
+                    src="https://www.google.com/maps?q=Via%20Roma%2012%20Trento&output=embed"
+                    width="100%"
+                    height="360"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
                 </iframe>
             </div>
+
         </section>
+
     </main>
-    <!-------------------- FOOTER (FINE PAGINA)------------------------->
+
+    <!-- FOOTER -->
     <footer>
-        <div>
-            <div>
-                <img id="Logo" src="../IMMAGINI/StudioBianco.png" alt="">
-            </div>
-            <div>
+        <div class="footerContenuto">
+            <img id="Logo" src="../IMMAGINI/StudioBianco.png" alt="Logo Studio Legale Draganoiu">
+
+            <div class="footerInfo">
                 <p>Email: info@studiodraganoiu.it</p>
+                <p>Telefono: 123 456 7890</p>
             </div>
-            <p>Telefono: 123 456 7890</p>
         </div>
     </footer>
+
 </body>
+
+</html>

@@ -1,23 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione | Studio Legale Draganoiu</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="../CSS/Consulenza.css">
 </head>
-<!--- CORPO DEL SITO ---->
 
-<body id="body">
-    <!------------ NAV BAR(MENU DI NAVIGAZIONE) ------------->
+<body>
+
+    <!-- NAVBAR -->
     <nav class="nav">
-        <!------------ LOGO ------------->
-        <div class="Logo">
-            <img src="../IMMAGINI/studioLegale.png" alt="Logo">
+        <div class="logo">
+            <img src="../IMMAGINI/studioLegale.png" alt="Logo Studio Legale Draganoiu">
         </div>
 
-        <!------------ PAGINE ------------->
         <div class="pagine_navigazione">
             <a href="../index.html">Home</a>
             <a href="ChiSono.html">Chi Sono</a>
@@ -30,60 +35,123 @@
         </div>
     </nav>
 
-    <!-- Prenotazione -->
-    <section class="hero-prenotazione">
+    <!-- HERO -->
+    <header class="hero-prenotazione">
         <div class="hero-content">
-            <h1>PRENOTA UNA CONSULENZA</h1>
-            <p>Scegli la data e l'orario più comodi per te. Ti ricontatteremo per conferma.</p>
+            <span class="sottotitoloHero">Prenotazione consulenza</span>
+
+            <h1>Fissa un appuntamento con lo studio</h1>
+
+            <p>
+                Compila il modulo con i tuoi dati e indica giorno e orario preferiti.
+                Verrai ricontattato per confermare la disponibilità e definire le modalità della consulenza.
+            </p>
         </div>
-    </section>
+    </header>
 
-    <!-- PRENOTAZIONE -->
-    <section class="prenotazione">
-        <h2 class="section-title">FISSA UN APPUNTAMENTO</h2>
+    <main>
 
-        <div class="prenotazione-container">
+        <!-- INTRO -->
+        <section class="intro-prenotazione">
+            <span class="etichettaSezione">Richiesta appuntamento</span>
 
-            <!-- Scelta data e ora -->
-            <div class="card">
-                <h3>FISSA UN APPUNTAMENTO</h3>
+            <h2>Raccontaci brevemente la tua esigenza</h2>
 
-                <div class="datetime">
-                    <input type="date">
-                    <input type="time">
+            <p>
+                Il modulo consente di inviare una richiesta preliminare allo studio. Le informazioni inserite
+                permettono di comprendere meglio la situazione e di organizzare un primo confronto in modo
+                più preciso e ordinato.
+            </p>
+        </section>
+
+        <!-- FORM UNICA -->
+        <section class="prenotazione">
+            <div class="form-card">
+
+                <div class="form-intestazione">
+                    <h3>Modulo di prenotazione</h3>
+                    <p>
+                        Inserisci i tuoi dati, scegli una data indicativa e descrivi brevemente il motivo
+                        della richiesta. I campi contrassegnati sono utili per poterti ricontattare correttamente.
+                    </p>
                 </div>
 
-                <button class="btn-primary">Prenota Consulenza</button>
-            </div>
+                <form class="form-prenotazione">
 
-            <!-- Form contatto -->
-            <div class="card">
-                <h3>INVIA UNA RICHIESTA</h3>
-                <p>Inserisci i tuoi dati e verrai ricontattato per confermare l'appuntamento.</p>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome e cognome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Es. Mario Rossi" required>
+                        </div>
 
-                <form>
-                    <input type="text" placeholder="Il tuo nome" required>
-                    <input type="tel" placeholder="Il tuo telefono" required>
-                    <input type="email" placeholder="La tua email" required>
-                    <textarea placeholder="Messaggio (opzionale)"></textarea>
+                        <div class="form-group">
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Es. 333 1234567" required>
+                        </div>
+                    </div>
 
-                    <button type="submit" class="btn-primary">Invia richiesta</button>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Es. nome@email.it" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="area">Area di consulenza</label>
+                            <select id="area" name="area">
+                                <option value="">Seleziona un’area</option>
+                                <option value="diritto-civile">Diritto civile</option>
+                                <option value="diritto-lavoro">Diritto del lavoro</option>
+                                <option value="diritto-famiglia">Diritto di famiglia</option>
+                                <option value="diritto-commerciale">Diritto commerciale</option>
+                                <option value="altro">Altro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="data">Data preferita</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ora">Orario preferito</label>
+                            <input type="time" id="ora" name="ora" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio</label>
+                        <textarea id="messaggio" name="messaggio"
+                            placeholder="Descrivi brevemente la tua esigenza o il motivo della consulenza"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Invia richiesta di prenotazione</button>
+
+                    <p class="nota-form">
+                        L’invio del modulo non conferma automaticamente l’appuntamento. Lo studio provvederà
+                        a ricontattarti per confermare data, orario e disponibilità.
+                    </p>
+
                 </form>
             </div>
+        </section>
 
-        </div>
-    </section>
+    </main>
 
-
-    <!-------------------- FOOTER (FINE PAGINA)------------------------->
+    <!-- FOOTER -->
     <footer>
-        <div>
-            <div>
-                <img id="Logo" src="../IMMAGINI/StudioBianco.png" alt="">
-            </div>
-            <div>
+        <div class="footerContenuto">
+            <img id="Logo" src="../IMMAGINI/StudioBianco.png" alt="Logo Studio Legale Draganoiu">
+
+            <div class="footerInfo">
                 <p>Email: info@studiodraganoiu.it</p>
+                <p>Telefono: 123 456 7890</p>
             </div>
-            <p>Telefono: 123 456 7890</p>
         </div>
     </footer>
+
+</body>
+
+</html>
