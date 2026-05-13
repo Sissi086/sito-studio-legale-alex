@@ -1,3 +1,24 @@
+<?php
+$host = "localhost";
+$user = "root";
+$password = "root";
+$database = "studio_legale";
+
+$connessione = new mysqli($host, $user, $password, $database);
+
+$prenotazioni = [];
+
+if (!$connessione->connect_error) {
+    $sql = "SELECT * FROM prenotazioni ORDER BY data_ora ASC";
+    $risultato = $connessione->query($sql);
+
+    if ($risultato && $risultato->num_rows > 0) {
+        while ($riga = $risultato->fetch_assoc()) {
+            $prenotazioni[] = $riga;
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="it">
 
@@ -28,7 +49,7 @@
             <a href="ChiSono.html">Chi Sono</a>
             <a href="Servizi.html">Servizi</a>
             <a href="Aree.html">Aree</a>
-            <a href="Consulenza.html">Prenotazione</a>
+            <a href="Consulenza.php">Prenotazione</a>
             <a href="Costi.html">Costi</a>
             <a href="Risultati.html">Risultati</a>
             <a href="contatti.html">Contatti</a>
@@ -76,7 +97,7 @@
                     </p>
                 </div>
 
-                <form class="form-prenotazione">
+                <form class="form-prenotazione" action="../PHP/salva_prenotazione.php" method="POST">
 
                     <div class="form-row">
                         <div class="form-group">
@@ -137,7 +158,86 @@
                 </form>
             </div>
         </section>
+<section class="sezione-prenotazioni">
 
+    <div class="intestazione-prenotazioni">
+        <span class="etichettaSezione">Agenda appuntamenti</span>
+        <h2>Prenotazioni registrate</h2>
+        <p>
+            In questa sezione vengono mostrate le richieste di consulenza salvate nel database.
+            Ogni nuova prenotazione comparirà automaticamente dopo l’invio del modulo.
+        </p>
+    </div>
+
+    <?php if (isset($_GET["successo"])) { ?>
+        <div class="messaggio-esito successo">
+            Prenotazione salvata correttamente.
+        </div>
+    <?php } ?>
+
+    <?php if (isset($_GET["errore"])) { ?>
+        <div class="messaggio-esito errore">
+            Si è verificato un errore durante il salvataggio della prenotazione.
+        </div>
+    <?php } ?>
+
+    <?php if (count($prenotazioni) > 0) { ?>
+
+        <div class="prenotazioni-grid">
+
+            <?php foreach ($prenotazioni as $prenotazione) { ?>
+
+                <?php
+                $dataFormattata = date("d/m/Y", strtotime($prenotazione["data_ora"]));
+                $oraFormattata = date("H:i", strtotime($prenotazione["data_ora"]));
+                ?>
+
+                <article class="prenotazione-card">
+
+                    <div class="data-box">
+                        <span class="giorno"><?php echo date("d", strtotime($prenotazione["data_ora"])); ?></span>
+                        <span class="mese"><?php echo date("m/Y", strtotime($prenotazione["data_ora"])); ?></span>
+                    </div>
+
+                    <div class="prenotazione-info">
+                        <h3><?php echo htmlspecialchars($prenotazione["nome"]); ?></h3>
+
+                        <p><strong>Data:</strong> <?php echo $dataFormattata; ?></p>
+                        <p><strong>Ora:</strong> <?php echo $oraFormattata; ?></p>
+
+                        <?php if (!empty($prenotazione["area"])) { ?>
+                            <p><strong>Area:</strong> <?php echo htmlspecialchars($prenotazione["area"]); ?></p>
+                        <?php } ?>
+
+                        <p><strong>Telefono:</strong> <?php echo htmlspecialchars($prenotazione["telefono"]); ?></p>
+
+                        <?php if (!empty($prenotazione["email"])) { ?>
+                            <p><strong>Email:</strong> <?php echo htmlspecialchars($prenotazione["email"]); ?></p>
+                        <?php } ?>
+
+                        <?php if (!empty($prenotazione["messaggio"])) { ?>
+                            <p class="messaggio-card">
+                                <?php echo htmlspecialchars($prenotazione["messaggio"]); ?>
+                            </p>
+                        <?php } ?>
+                    </div>
+
+                </article>
+
+            <?php } ?>
+
+        </div>
+
+    <?php } else { ?>
+
+        <div class="nessuna-prenotazione">
+            <h3>Nessuna prenotazione registrata</h3>
+            <p>Quando verrà inviata una richiesta, comparirà qui sotto forma di scheda.</p>
+        </div>
+
+    <?php } ?>
+
+</section>
     </main>
 
     <!-- FOOTER -->
@@ -152,7 +252,6 @@
         </div>
     </footer>
 <script src="../JS/animazioni.js"></script>
-<script src="../JS/consulenza.js"></script>
 </body>
 
 </html>

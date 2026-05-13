@@ -359,3 +359,174 @@ footer {
 .inviato {
     background-color: #1c2a39 !important;
 }
+
+/* SEZIONE PRENOTAZIONI */
+.sezione-prenotazioni {
+    max-width: 1150px;
+    margin: 90px auto 0;
+    padding: 0 25px;
+}
+
+.intestazione-prenotazioni {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.intestazione-prenotazioni h2 {
+    font-family: "Cormorant SC", serif;
+    font-size: 44px;
+    font-weight: 600;
+    color: #1c2a39;
+    margin-bottom: 18px;
+}
+
+.intestazione-prenotazioni p {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 16.5px;
+    line-height: 1.8;
+    color: #4d5b68;
+}
+
+.messaggio-esito {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    padding: 16px 22px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.messaggio-esito.successo {
+    background-color: rgba(109, 165, 238, 0.15);
+    color: #1c2a39;
+    border: 1px solid rgba(109, 165, 238, 0.35);
+}
+
+.messaggio-esito.errore {
+    background-color: rgba(180, 45, 45, 0.12);
+    color: #b42d2d;
+    border: 1px solid rgba(180, 45, 45, 0.25);
+}
+
+.prenotazioni-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.prenotazione-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    border: 1px solid #e1e7ec;
+    box-shadow: 0 12px 30px rgba(28, 42, 57, 0.06);
+    display: flex;
+    gap: 22px;
+    transition: all 0.3s ease;
+}
+
+.prenotazione-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(28, 42, 57, 0.10);
+}
+
+.data-box {
+    min-width: 82px;
+    height: 92px;
+    background-color: #1c2a39;
+    color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.data-box .giorno {
+    font-family: "Cormorant SC", serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.data-box .mese {
+    font-size: 13px;
+    color: #d7e8fb;
+    margin-top: 6px;
+}
+
+.prenotazione-info h3 {
+    font-family: "Cormorant SC", serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1c2a39;
+    margin-bottom: 12px;
+}
+
+.prenotazione-info p {
+    font-size: 15px;
+    color: #5b6875;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+.prenotazione-info strong {
+    color: #1c2a39;
+}
+
+.messaggio-card {
+    margin-top: 14px;
+    padding: 14px;
+    background-color: #f4f7f9;
+    border-left: 4px solid #6da5ee;
+    border-radius: 8px;
+}
+
+.nessuna-prenotazione {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 45px 30px;
+    text-align: center;
+    border: 1px solid #e1e7ec;
+    box-shadow: 0 12px 30px rgba(28, 42, 57, 0.06);
+}
+
+.nessuna-prenotazione h3 {
+    font-family: "Cormorant SC", serif;
+    font-size: 32px;
+    color: #1c2a39;
+    margin-bottom: 12px;
+}
+
+.nessuna-prenotazione p {
+    color: #5b6875;
+}
+
+/* RESPONSIVE PRENOTAZIONI */
+@media (max-width: 900px) {
+    .prenotazioni-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prenotazione-card {
+        max-width: 650px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .prenotazione-card {
+        flex-direction: column;
+    }
+
+    .data-box {
+        width: 90px;
+    }
+
+    .intestazione-prenotazioni h2 {
+        font-size: 36px;
+    }
+}
